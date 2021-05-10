@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Hof ModellBil Klubb - HMBK</title>
+<title>Hof Modellbil Klubb - HMBK</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -16,8 +16,20 @@
     }
 
     .mySlides {
-        display: none
+        display: none;
+        border-bottom: 1px solid #000000;
     }
+
+    .banner {
+        padding:2em;
+        background: #000000;
+        background: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,5) 50%, rgba(0,0,0,0.3) 100%);
+    }
+
+    .banner > p {
+        color: white;
+    }
+
 </style>
 <body>
 
@@ -40,17 +52,49 @@
     <!-- Slides -->
     <div class="mySlides w3-display-container w3-center">
         <img src="images/bg_01.jpg" style="width:100%" alt="Bakgrunn">
-    </div>
-    <!--
-        <div class="mySlides w3-display-container w3-center">
-        <div class="mySlides w3-display-container w3-center">
-          <img src="/w3images/ny.jpg" style="width:100%">
-          <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-            <h3>New York</h3>
-            <p><b>The atmosphere in New York is lorem ipsum.</b></p>
-          </div>
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <div class="banner">
+                <h3>Kyosho MP10 TKI2</h3>
+                <p>For øyeblikket den råeste inferno'en i en lang rekke biler fra Kyosho</p>
+            </div>
         </div>
-      -->
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+        <img src="images/bg_02.jpg" style="width:100%" alt="Bakgrunn">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <div class="banner">
+                <h3>Flere merker og nivåer er representert</h3>
+                <p>Alle typer buggy i skala 1/8 og 1/10 kan konkurrere.</p>
+            </div>
+        </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+        <img src="images/bg_03.jpg" style="width:100%" alt="Bakgrunn">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <div class="banner">
+                <h3>Høy hastighet</h3>
+                <p>Bilene kan nå hastigheter på 80-100km/t, avhenging av bane og forhold</p>
+            </div>
+        </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+        <img src="images/bg_04.jpg" style="width:100%" alt="Bakgrunn">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <div class="banner">
+                <h3>Raske, lange svev</h3>
+                <p>Bilenes balanse kontrolleres i lufta med gasspådrag og brems</p>
+            </div>
+        </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+        <img src="images/bg_05.jpg" style="width:100%" alt="Bakgrunn">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <div class="banner">
+                <h3>Skiftende forhold og underlag</h3>
+                <p>Et utvalg forskjellige underlag, som sand, grus, tre, filt og betong gjør at man alltid utfordres</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Kontakt oss -->
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="about">
@@ -104,13 +148,12 @@
 <!-- End Page Content -->
 
 <script>
-    // Automatic Slideshow - change image every 4 seconds
-    var myIndex = 0;
+    let myIndex = 0;
     carousel();
 
     function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
+        let i;
+        const x = document.getElementsByClassName("mySlides");
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
         }
@@ -119,7 +162,7 @@
             myIndex = 1
         }
         x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 4000);
+        setTimeout(carousel, 6000);
     }
 </script>
 
