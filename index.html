@@ -26,8 +26,22 @@
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 5) 50%, rgba(0, 0, 0, 0.3) 100%);
     }
 
-    .banner > p {
-        color: white;
+    blockquote {
+        font-size: 1.5em;
+        background: #fff;
+        border-left: 0 solid #999;
+        margin: 0 10px;
+        padding: 1em 20px;
+        quotes: "\201C" "\201D" "\2018" "\2019";
+    }
+
+    blockquote:before {
+        color: #999;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
     }
 
 </style>
@@ -55,7 +69,7 @@
         <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
             <div class="banner">
                 <h3>Kyosho MP10 TKI2</h3>
-                <p>For øyeblikket den råeste inferno'en i en lang rekke biler fra Kyosho</p>
+                <p>For øyeblikket den råeste inferno'en i en lang rekke legendariske biler fra Kyosho</p>
             </div>
         </div>
     </div>
@@ -73,7 +87,7 @@
         <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
             <div class="banner">
                 <h3>Høy hastighet</h3>
-                <p>Bilene kan nå hastigheter på 80-100km/t, avhenging av bane og forhold</p>
+                <p>Bilene kan nå hastigheter på 80-100km/t avhenging av bane og forhold</p>
             </div>
         </div>
     </div>
@@ -82,7 +96,7 @@
         <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
             <div class="banner">
                 <h3>Raske, lange svev</h3>
-                <p>Bilenes balanse kontrolleres i lufta med gasspådrag og brems</p>
+                <p>Bilenes balanse kontrolleres i lufta ved hjelp av gasspådrag og brems</p>
             </div>
         </div>
     </div>
@@ -98,57 +112,133 @@
 
     <!-- Kontakt oss -->
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="about">
+        <div class="w3-row">
+            <div class="w3-third">
+                <img src="images/hmbk-logo.jpg" alt="Logo" class="w3-center"
+                     style="width:100%; max-width: 600px; padding-bottom: 3em; padding-right:1.5em;">
+            </div>
 
-        <div>
-            <img src="images/hmbk-logo.jpg"
-                 style="float:left; width: 40%; min-width: 180px; padding-right:3em; padding-bottom:3em;" alt="Logo">
-
-            <p class="w3-justify" style="font-size:1.2em; line-height: 1.6em; margin-top:1em; margin-bottom: 0">Hof&nbsp;modellbil-klubb
+            <div class="w3-twothird w3-xlarge">
+                Hof&nbsp;modellbil-klubb
                 ble startet i år 2000 med ønske om å bygge en
                 klubb med et godt
-                miljø, som favner bredt, både i alder og ambisjon. Her skal alle føle seg velkomne!</p>
+                miljø, som favner bredt, både i alder og ambisjon. Her skal alle føle seg velkomne!
+            </div>
         </div>
 
-        <h3 class="w3-header" style="clear:both">Banen</h3>
-        <p class="w3-justify">Banen består av et utvalg forskjellige underlag, som sand, grus, tre, filt og betong.
-            Sammen med forskjellig
-            dosering, ujevnheter og hopp skapes en utfordrende bane.
+        <h3 class="w3-header" style="clear:both">Banen vår</h3>
+        <p class="w3-justify">
+            Banen består av et utvalg forskjellige underlag, som sand, grus, tre, filt og betong.
+            Sammen med forskjellig dosering, ujevnheter og hopp skapes en utfordrende bane.
+            Oppsett av bilens geometri, valg av dekk, fuel, tuning av motor, temperatur og luftfuktighet er andre
+            faktorer som spiller inn.
             Sesongen varer så lenge vær og føre tillater.
+
+            <img src="images/banekart.jpg" alt="Banekart" style="padding-top:1em; width:100%">
+        <p><i>* Noe utdatert. Nytt kart kommer.</i></p>
         </p>
 
         <h3 class="w3-header">Bilene</h3>
         <p class="w3-justify">
             Det kjøres hovedsakelig buggy i skala 1/8 og skala 1/10, både elektrisk og nitrometan.
-        </p>
-
-        <h3 class="w3-header">Hvordan begynner jeg?</h3>
-        <p class="w3-justify">
-            Det er bare å møte opp, med eller uten bil! Hvis du ønsker avtale med oss, er det enkleste å kontakte oss
-            gjennom vår Facebook-gruppe
-        </p>
-
-        <h3 class="w3-header">Kontakt oss</h3>
         <div class="w3-row">
-            <i class="fa fa-phone" style="width:30px"></i> Telefon: +47 12345678<br>
-            <i class="fa fa-envelope" style="width:30px"> </i> E-post: mail@mail.com<br>
-            <a href="https://www.facebook.com/groups/209667809096765"><i class="fa fa-facebook-official"
-                                                                         style="width:30px"> </i>Facebook-side</a><br>
+            <div class="w3-half">
+                <div class="w3-container"
+                ">
+                <b>1:8 skala</b>
+                <div style="min-height: 13em">
+                    <img style="width:100%" src="images/mp10e_1_8.jpg" alt="1/8 skala buggy"/>
+                </div>
+                <p>Skala 1:8 biler ca 49cm lange, og veier typisk 3,3 til 3.7 Kg.</p>
+            </div>
+        </div>
+        <div class="w3-half">
+            <div class="w3-container">
+                <b>1:10 skala</b>
+                <div style="min-height: 13em">
+                    <img style="width:87%" src="images/lazer_1_10.jpg" alt="1/10 skala buggy"/>
+                </div>
+                <p>Skala 1:10 biler ca 39cm lange, og veier typisk 1,6 Kg.</p>
+            </div>
         </div>
     </div>
+    </p>
 
-    <!-- Hvor -->
-    <div class="w3-black" id="where" style="height: 100%">
-        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-            <h2 class="w3-wide w3-center"><i class="fa fa-map-marker" style="width:30px"></i>Hvor holder vi til</h2>
-            <p class="w3-opacity w3-center"><i>Vestre Lianvei 6, 3090 Hof</i><br>
-            <p>Følg veien til du ser NAF sin øvingsbane og fortsett videre forbi den til du ser grusparkeringen på
-                høyre side.</p>
+    <h3 class="w3-header">Klubben</h3>
+    <p class="w3-justify">
+        Klubben vår er et sted vi samles for å trene, kjøre å ha det gøy, diskutere set-up på bilene, justere
+        motorer, konkurrere og ha sosialt samvær.
+    </p>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2023.8309086727763!2d10.056369216079947!3d59.51924728172565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46412db99eec1687%3A0xebf780ef89944420!2sVestre%20Lianvei%206%2C%203090%20Hof!5e0!3m2!1sen!2sno!4v1620573964314!5m2!1sen!2sno"
-                    width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+    <p class="w3-justify">
+        <b>Leder:</b> André Hansen<br>
+        <b>Nestleder:</b> ?
+
+        <br><br><b>Styre-medlemmer:</b>
+    <ul>
+        <li>William Jacobsen</li>
+        <li>Rune Karlsen</li>
+        <li>Terje Andre Syvertsen</li>
+    </ul>
+    </p>
+
+    <h3 class="w3-header">Hvordan begynner jeg?</h3>
+    <p class="w3-justify">
+        Det er bare å møte opp, med eller uten bil! Hvis du ønsker avtale med oss, er det enkleste å kontakte oss
+        gjennom vår Facebook-gruppe.
+    </p>
+
+    <p>Det koster ikke noe for å komme å prøve. Hvis man etter første besøk, fortsatt finner ut om dette er noe for
+        seg, kan man kjøre
+        for en start-avgift på 100,- per gang.
+        Medlemmer kjører til halv pris, kr 50,-. Medlemskap koster kr 500,-. Kjører man mye, lønner det seg å bli
+        medlem og kjøpe et
+        sesong-pass til 400,- som gir ubegrenset med kjøring.</p>
+
+    <h3 class="w3-header">Kontakt oss</h3>
+    <div class="w3-row">
+        <i class="fa fa-phone" style="width:30px"></i> Telefon: +47 12345678<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> E-post: mail@mail.com<br>
+        <a href="https://www.facebook.com/groups/209667809096765"><i class="fa fa-facebook-official"
+                                                                     style="width:30px"> </i>Facebook-side</a><br>
+        Org.nr: <a href="https://w2.brreg.no/enhet/sok/detalj.jsp?orgnr=818549822">818549822</a>
     </div>
+</div>
 
+<!-- Hvor -->
+<div class="w3-black" id="where" style="height: 100%">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <h2 class="w3-wide w3-center"><i class="fa fa-map-marker" style="width:30px"></i>Hvor holder vi til</h2>
+        <p class="w3-opacity w3-center"><i>Vestre Lianvei 6, 3090 Hof</i><br>
+        <p>Følg veien til du ser NAF sin øvingsbane og fortsett videre forbi den til du ser grusparkeringen på
+            høyre side.</p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2023.8309086727763!2d10.056369216079947!3d59.51924728172565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46412db99eec1687%3A0xebf780ef89944420!2sVestre%20Lianvei%206%2C%203090%20Hof!5e0!3m2!1sen!2sno!4v1620573964314!5m2!1sen!2sno"
+                width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+
+<!--
+<div class="w3-white" id="weather" style="height: 100%">
+
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <h3>Været</h3>
+        <a class="weatherwidget-io" href="https://forecast7.com/no/59d5310d09/hof/" data-label_1="HMBK"
+           data-label_2="været" data-icons="Climacons Animated" data-days="7" data-theme="dark">HMBK været</a>
+        <script>
+            !function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = 'https://weatherwidget.io/js/widget.min.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, 'script', 'weatherwidget-io-js');
+        </script>
+    </div>
+</div>
+-->
 </div>
 
 <!-- End Page Content -->
