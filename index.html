@@ -49,16 +49,25 @@
 
 <!-- Navbar -->
 <div class="w3-top">
-    <div class="w3-bar w3-black w3-card">
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Hjem</a>
-        <a href="#where" class="w3-bar-item w3-button w3-padding-large">Hvor</a>
-        <a href="#about" class="w3-bar-item w3-button w3-padding-large">Om oss</a>
+    <div id="menu-container" class="w3-bar w3-black w3-card">
+        <a class="w3-button w3-padding-large w3-hide-medium w3-hide-large w3-left" href="javascript:void(0)"
+           onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Om</a>
+        <a href="#track" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Banen</a>
+        <a href="#cars" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Bilene</a>
+        <a href="#membership" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Medlemskap</a>
+        <a href="#where" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Hvor</a>
         <a href="https://www.facebook.com/groups/209667809096765">
             <span style="background: black; font-size:xx-large; color:#3b5998; float: right; padding-right:10px;">
             <i class="fa fa-facebook-official w3-hover-opacity"></i>
         </span>
         </a>
     </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+
 </div>
 
 <div class="w3-content" style="max-width:5000px;margin-top:46px">
@@ -105,7 +114,8 @@
         <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
             <div class="banner">
                 <h3>Skiftende forhold og underlag</h3>
-                <p>Et utvalg forskjellige underlag, jord, leire, tre, kunstgress og betongheller gjør at man alltid utfordres</p>
+                <p>Et utvalg forskjellige underlag, jord, leire, tre, kunstgress og betongheller gjør at man alltid
+                    utfordres</p>
             </div>
         </div>
     </div>
@@ -125,87 +135,110 @@
                 miljø, som favner bredt, både i alder og ambisjon. Her skal alle føle seg velkomne!
             </div>
         </div>
-
-        <h3 class="w3-header" style="clear:both">Banen vår</h3>
-        <p class="w3-justify">
-            Banen består av et utvalg forskjellige underlag, som jord, leire, tre, kunstgress og betongheller.
-            Sammen med forskjellig dosering, ujevnheter og hopp skapes en utfordrende bane.
-            Oppsett av bilens geometri, valg av dekk, fuel, tuning av motor, temperatur og luftfuktighet er andre
-            faktorer som spiller inn.
-            Sesongen varer så lenge vær og føre tillater.
-
-            <img src="images/banekart.jpg" alt="Banekart" style="padding-top:1em; width:100%">
-        <p><i>* Noe utdatert. Nytt kart kommer.</i></p>
-
-        <h3 class="w3-header">Bilene</h3>
-        <p class="w3-justify">
-            Det kjøres hovedsakelig buggy i skala 1/8 og skala 1/10, både elektrisk og nitrometan.
-        <div class="w3-row">
-            <div class="w3-half">
-                <div class="w3-container">
-                    <b>1:8 skala</b>
-                    <div style="min-height: 13em">
-                        <img style="width:100%" src="images/mp10e_1_8.jpg" alt="1/8 skala buggy"/>
-                    </div>
-                    <p>Skala 1:8 biler ca 49cm lange, og veier typisk 3,3 til 3.7 Kg.</p>
-                </div>
-            </div>
-            <div class="w3-half">
-                <div class="w3-container">
-                    <b>1:10 skala</b>
-                    <div style="min-height: 13em">
-                        <img style="width:87%" src="images/lazer_1_10.jpg" alt="1/10 skala buggy"/>
-                    </div>
-                    <p>Skala 1:10 biler ca 39cm lange, og veier typisk 1,6 Kg.</p>
-                </div>
-            </div>
-        </div>
-
-        <h3 class="w3-header">Klubben</h3>
         <p class="w3-justify">
             Klubben vår er et sted vi samles for å trene, kjøre å ha det gøy, diskutere set-up på bilene, justere
-            motorer, konkurrere og ha sosialt samvær.
+            motorer, konkurrere og ha sosialt samvær. Ikke minst skal vi ha det gøy!
         </p>
 
-        <div class="w3-justify">
-            <b>Leder:</b> André Hansen<br>
-            <b>Nestleder:</b> Karl Odmar Fossheim
-
-            <br><br><b>Styre-medlemmer:</b>
-            <ul>
-                <li>William Jacobsen</li>
-                <li>Rune Karlsen</li>
-                <li>Terje Andre Syvertsen</li>
-            </ul>
-        </div>
-
-        <h3 class="w3-header">Hvordan begynner jeg?</h3>
-        <p class="w3-justify">
-            Det er bare å møte opp, med eller uten bil! Hvis du ønsker avtale med oss, er det enkleste å kontakte oss
-            gjennom vår Facebook-gruppe.
-        </p>
-
-        <p>Det koster ikke noe for å komme å prøve. Hvis man etter første besøk, fortsatt finner ut om dette er noe for
-            seg, kan man kjøre
-            for en start-avgift på 100,- per gang.
-            Medlemmer kjører til halv pris, kr 50,-. Medlemskap koster kr 500,-. Kjører man mye, lønner det seg å bli
-            medlem og kjøpe et
-            sesong-pass til 400,- som gir ubegrenset med kjøring.</p>
-
-        <h3 class="w3-header">Kontakt oss</h3>
         <div class="w3-row">
-            <i class="fa fa-phone" style="width:30px"></i> Telefon: +47 12345678<br>
-            <i class="fa fa-envelope" style="width:30px"> </i> E-post: mail@mail.com<br>
-            <a href="https://www.facebook.com/groups/209667809096765"><i class="fa fa-facebook-official"
-                                                                         style="width:30px"> </i>Facebook-side</a><br>
-            Org.nr: <a href="https://w2.brreg.no/enhet/sok/detalj.jsp?orgnr=818549822">818549822</a>
+            <div class="w3-half">
+                <i class="fa fa-phone" style="width:30px"></i> Telefon: +47 12345678<br>
+                <i class="fa fa-envelope" style="width:30px"> </i> E-post: mail@mail.com<br>
+                <a href="https://www.facebook.com/groups/209667809096765"><i class="fa fa-facebook-official"
+                                                                             style="width:30px"> </i>Facebook-side</a><br>
+                Org.nr: <a href="https://w2.brreg.no/enhet/sok/detalj.jsp?orgnr=818549822">818549822</a>
+            </div>
+            <div class="w3-half">
+                <b>Leder:</b> André Hansen<br>
+                <b>Nestleder:</b> Karl Odmar Fossheim
+
+                <br><br><b>Styre-medlemmer:</b>
+                <ul>
+                    <li>William Jacobsen</li>
+                    <li>Rune Karlsen</li>
+                    <li>Terje Andre Syvertsen</li>
+                </ul>
+            </div>
         </div>
     </div>
 
-    <!-- Hvor -->
-    <div class="w3-black" id="where" style="height: 100%">
+
+    <!-- Banen -->
+    <div class="w3-black" id="track">
+        <div class="w3-container w3-black w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">Banen</h2>
+            <p class="w3-justify">
+                Banen består av et utvalg forskjellige underlag, som jord, leire, tre, kunstgress og betongheller.
+                Sammen med forskjellig dosering, ujevnheter og hopp skapes en utfordrende bane.
+                Oppsett av bilens geometri, valg av dekk, fuel, tuning av motor, temperatur og luftfuktighet er andre
+                faktorer som spiller inn.
+                Sesongen varer så lenge vær og føre tillater.
+
+                <img src="images/banekart.jpg" alt="Banekart" style="padding-top:1em; width:100%">
+            <p><i>* Noe utdatert. Nytt kart kommer.</i></p>
+        </div>
+    </div>
+
+
+    <!-- Bilene -->
+    <div class="w3-white" id="cars">
+        <div class="w3-container w3-white w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">Bilene</h2>
+            <p class="w3-justify">
+                Det kjøres hovedsakelig buggy i skala 1/8 og skala 1/10, både elektrisk og nitrometan.
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="w3-container">
+                        <b>1:8 skala</b>
+                        <div style="min-height: 13em">
+                            <img style="width:100%" src="images/mp10e_1_8.jpg" alt="1/8 skala buggy"/>
+                        </div>
+                        <p>Dette er den største typen bil som kjøres på banen. Større hjul og mulighet for større
+                            demperbevegelse gjør disse bilen godt utstyrt for å håndtere varierende underlag og
+                            ujevnheter. Bilene er ca 49cm lange, og veier typisk 3,3 til 3.7 Kg.</p>
+                    </div>
+                </div>
+                <div class="w3-half">
+                    <div class="w3-container">
+                        <b>1:10 skala</b>
+                        <div style="min-height: 13em">
+                            <img style="width:87%" src="images/lazer_1_10.jpg" alt="1/10 skala buggy"/>
+                        </div>
+                        <p>Bilene er lettere og noe rimeligere enn sine større søsken i skala 1:8, og gjør det til en
+                            populær klasse å starte i. Bilene er ca 39cm lange og veier rundt 1,6 Kg.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bli med / medlemskap -->
+    <div class="w3-black" id="membership">
         <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-            <h2 class="w3-wide w3-center"><i class="fa fa-map-marker" style="width:30px"></i>Hvor holder vi til</h2>
+            <h2 class="w3-wide w3-center">Medlemskap</h2>
+            <p class="w3-justify">
+                Det er bare å møte opp, med eller uten bil! Hvis du ønsker avtale med oss, er det enkleste å kontakte
+                oss
+                gjennom vår Facebook-gruppe.
+            </p>
+
+            <p>Det koster ikke noe for å komme å prøve. Hvis man etter første besøk, fortsatt finner ut om dette er noe
+                for
+                seg, kan man kjøre
+                for en start-avgift på 100,- per gang.
+                Medlemmer kjører til halv pris, kr 50,-. Medlemskap koster kr 500,-. Kjører man mye, lønner det seg å
+                bli
+                medlem og kjøpe et
+                sesong-pass til 400,- som gir ubegrenset med kjøring.</p>
+        </div>
+    </div>
+
+
+    <!-- Hvor -->
+    <div class="w3-white" id="where">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">Hvor du finner oss</h2>
             <p class="w3-opacity w3-center"><i>Vestre Lianvei 6, 3090 Hof</i><br>
             <p>Følg veien til du ser NAF sin øvingsbane og fortsett videre forbi den til du ser grusparkeringen på
                 høyre side.</p>
@@ -215,10 +248,11 @@
         </div>
     </div>
 
-    <!--
-    <div class="w3-white" id="weather" style="height: 100%">
 
+    <!-- Været -->
+    <div class="w3-black" id="weather" style="min-height: 100%">
         <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+
             <h3>Været</h3>
             <a class="weatherwidget-io" href="https://forecast7.com/no/59d5310d09/hof/" data-label_1="HMBK"
                data-label_2="været" data-icons="Climacons Animated" data-days="7" data-theme="dark">HMBK været</a>
@@ -235,7 +269,6 @@
             </script>
         </div>
     </div>
-    -->
 </div>
 
 <!-- End Page Content -->
@@ -256,6 +289,32 @@
         }
         x[myIndex - 1].style.display = "block";
         setTimeout(carousel, 6000);
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    const x = document.getElementById("navDemo");
+    const items = document.getElementById("menu-container").getElementsByClassName("w3-hide-small")
+    for (let i in items) {
+        const item = items[i]
+        const text = item.innerHTML
+        const url = item.href
+
+        if (text && url) {
+            console.log(text, url)
+            const link = document.createElement('a')
+            link.href = url
+            link.innerHTML = text
+            link.className = 'w3-bar-item w3-button w3-padding-large'
+            x.appendChild(link)
+        }
+    }
+
+    function myFunction() {
+        if (x.className.indexOf("w3-show") === -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
     }
 </script>
 
