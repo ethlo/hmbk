@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nb">
+<html lang="nb" xmlns="http://www.w3.org/1999/html">
 <title>Hof Modellbil Klubb - HMBK</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,8 @@
     }
 
     body {
-        font-family: "Lato", sans-serif
+        font-family: "Lato", sans-serif;
+        background: black;
     }
 
     .mySlides {
@@ -24,24 +25,6 @@
         padding: 2em;
         background: #000000;
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 5) 50%, rgba(0, 0, 0, 0.3) 100%);
-    }
-
-    blockquote {
-        font-size: 1.5em;
-        background: #fff;
-        border-left: 0 solid #999;
-        margin: 0 10px;
-        padding: 1em 20px;
-        quotes: "\201C" "\201D" "\2018" "\2019";
-    }
-
-    blockquote:before {
-        color: #999;
-        content: open-quote;
-        font-size: 4em;
-        line-height: 0.1em;
-        margin-right: 0.25em;
-        vertical-align: -0.4em;
     }
 
 </style>
@@ -73,13 +56,14 @@
 <div class="w3-content" style="max-width:5000px;margin-top:46px">
 
     <!-- Slides -->
-    <div class="mySlides w3-display-container w3-center">
-        <img src="images/bg_01.jpg" style="width:100%" alt="Bakgrunn">
+    <div class="mySlides w3-display-container w3-center w3-black">
+        <img src="images/svingen2.jpg" style="width:100%" alt="Bakgrunn">
         <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-            <div class="banner">
+            <!--<div class="banner">
                 <h3>Kyosho MP10 TKI2</h3>
                 <p>For øyeblikket den råeste inferno'en i en lang rekke legendariske biler fra Kyosho</p>
             </div>
+            -->
         </div>
     </div>
     <div class="mySlides w3-display-container w3-center">
@@ -120,44 +104,52 @@
         </div>
     </div>
 
-    <!-- Kontakt oss -->
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="about">
-        <div class="w3-row">
-            <div class="w3-third">
-                <img src="images/hmbk-logo.jpg" alt="Logo" class="w3-center"
-                     style="width:100%; max-width: 600px; padding-bottom: 3em; padding-right:1.5em;">
-            </div>
+    <!-- Om oss -->
+    <div class="w3-white" id="about">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <div class="w3-row">
+                <div class="w3-third">
+                    <img src="images/hmbk-logo.jpg" alt="Logo" class="w3-center"
+                         style="width:100%; max-width: 600px; padding-bottom: 3em; padding-right:1.5em;">
+                </div>
 
-            <div class="w3-twothird w3-xlarge">
-                Hof&nbsp;modellbil-klubb
-                ble startet i år 2000 med ønske om å bygge en
-                klubb med et godt
-                miljø, som favner bredt, både i alder og ambisjon. Her skal alle føle seg velkomne!
+                <div class="w3-twothird w3-xlarge">
+                    Hof&nbsp;modellbil-klubb
+                    ble startet i år 2000 med ønske om å bygge en
+                    klubb med et godt
+                    miljø, som favner bredt, både i alder og ambisjon. Her skal alle føle seg velkomne!
+                </div>
             </div>
-        </div>
-        <p class="w3-justify">
-            Klubben vår er et sted vi samles for å trene, kjøre å ha det gøy, diskutere set-up på bilene, justere
-            motorer, konkurrere og ha sosialt samvær. Ikke minst skal vi ha det gøy!
-        </p>
+            <p class="w3-justify">
+                Klubben vår er et sted vi samles for å trene, kjøre å ha det gøy, diskutere set-up på bilene, justere
+                motorer, konkurrere og ha sosialt samvær. Ikke minst skal vi ha det gøy!
+            </p>
 
-        <div class="w3-row">
-            <div class="w3-half">
-                <i class="fa fa-phone" style="width:30px"></i> Telefon: +47 12345678<br>
-                <i class="fa fa-envelope" style="width:30px"> </i> E-post: mail@mail.com<br>
-                <a href="https://www.facebook.com/groups/209667809096765"><i class="fa fa-facebook-official"
-                                                                             style="width:30px"> </i>Facebook-side</a><br>
-                Org.nr: <a href="https://w2.brreg.no/enhet/sok/detalj.jsp?orgnr=818549822">818549822</a>
-            </div>
-            <div class="w3-half">
-                <b>Leder:</b> André Hansen<br>
-                <b>Nestleder:</b> Karl Odmar Fossheim
+            <div class="w3-row">
+                <div class="w3-half">
+                    <p>
+                        <i class="fa fa-phone" style="width:30px"></i> Telefon: +47 <br>
+                        <i class="fa fa-envelope" style="width:30px"> </i> E-post: <a
+                            href="mailto:xhofmodellbilklubbx@xgmailx.com"
+                            onmouseover="this.href=this.href.replace(/x/g,'');">klikk her</a><br>
+                        <a href="https://www.facebook.com/groups/209667809096765"><i class="fa fa-facebook-official"
+                                                                                     style="width:30px"> </i>Facebook-side</a><br>
+                        Org.nr: <a href="https://w2.brreg.no/enhet/sok/detalj.jsp?orgnr=818549822">818549822</a>
+                    </p>
+                </div>
+                <div class="w3-half">
+                    <p>
+                        <b>Leder:</b> André Hansen<br>
+                        <b>Nestleder:</b> Danny Kwiakowski
 
-                <br><br><b>Styre-medlemmer:</b>
-                <ul>
-                    <li>William Jacobsen</li>
-                    <li>Rune Karlsen</li>
-                    <li>Terje Andre Syvertsen</li>
-                </ul>
+                        <br><br><b>Styre-medlemmer:</b>
+                    <ul>
+                        <li>William Jacobsen</li>
+                        <li>Rune Karlsen</li>
+                        <li>Terje Andre Syvertsen</li>
+                    </ul>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -176,6 +168,44 @@
 
                 <img src="images/banekart.jpg" alt="Banekart" style="padding-top:1em; width:100%">
             <p><i>* Noe utdatert. Nytt kart kommer.</i></p>
+
+            <div class="w3-row w3-white">
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <img class="gallery-img" src="images/banen_01.jpg" style="width:100%">
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <img class="gallery-img" src="images/banen_02.jpg" style="width:100%">
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <img class="gallery-img" src="images/banen_03.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div>
+            <div class="w3-row w3-white">
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <img class="gallery-img" src="images/banen_04.jpg" style="width:100%">
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <img class="gallery-img" src="images/banen_05.jpg" style="width:100%">
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <img class="gallery-img" src="images/banen_06.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -275,26 +305,27 @@
 
 <script>
     let myIndex = 0;
+    const slides = document.getElementsByClassName("mySlides");
     carousel();
 
     function carousel() {
         let i;
-        const x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            slides[i].classList.add('w3-animate-right')
         }
         myIndex++;
-        if (myIndex > x.length) {
+        if (myIndex > slides.length) {
             myIndex = 1
         }
-        x[myIndex - 1].style.display = "block";
+        slides[myIndex - 1].style.display = "block";
         setTimeout(carousel, 6000);
     }
 
     // Used to toggle the menu on small screens when clicking on the menu button
     const x = document.getElementById("navDemo");
     const items = document.getElementById("menu-container").getElementsByClassName("w3-hide-small")
-    for (let i in items) {
+    for (let i = 0; i < items.length; i++) {
         const item = items[i]
         const text = item.innerHTML
         const url = item.href
@@ -306,6 +337,35 @@
             link.innerHTML = text
             link.className = 'w3-bar-item w3-button w3-padding-large'
             x.appendChild(link)
+        }
+    }
+
+    const galleryImgs = document.getElementsByClassName("gallery-img")
+    for (let i in galleryImgs) {
+        const imgElem = galleryImgs[i];
+
+        imgElem.onclick = function () {
+
+            const modal = document.createElement("div")
+            modal.classList.add("w3-modal")
+
+            const popup = document.createElement("div")
+            modal.appendChild(popup)
+            popup.style.background = 'rgb(0,0,0, 0.3)'
+            const img = document.createElement("img")
+            popup.appendChild(img)
+            popup.classList.add('w3-modal-content')
+            img.src = imgElem.src
+            img.alt = ''
+            img.style.width = '100%'
+            img.onclick = function () {
+                document.body.removeChild(modal)
+                popup.style.display = 'none';
+            }
+
+            console.log('clicked')
+            document.body.appendChild(modal)
+            modal.style.display = 'block'
         }
     }
 
