@@ -166,42 +166,42 @@
                 faktorer som spiller inn.
                 Sesongen varer så lenge vær og føre tillater.
 
-                <img src="images/banekart.jpg" alt="Banekart" style="padding-top:1em; width:100%">
-            <p><i>* Noe utdatert. Nytt kart kommer.</i></p>
+                <img class="gallery-img" src="images/thumbnails/banen_panorama.jpg" alt="Baneoversikt"
+                     style="padding-top:1em; width:100%">
 
             <div class="w3-row w3-white">
                 <div class="w3-third">
                     <div class="w3-card">
-                        <img class="gallery-img" src="images/banen_01.jpg" style="width:100%">
+                        <img class="gallery-img" src="images/thumbnails/banen_01.jpg" style="width:100%">
                     </div>
                 </div>
 
                 <div class="w3-third">
                     <div class="w3-card">
-                        <img class="gallery-img" src="images/banen_02.jpg" style="width:100%">
+                        <img class="gallery-img" src="images/thumbnails/banen_02.jpg" style="width:100%">
                     </div>
                 </div>
 
                 <div class="w3-third">
                     <div class="w3-card">
-                        <img class="gallery-img" src="images/banen_03.jpg" style="width:100%">
+                        <img class="gallery-img" src="images/thumbnails/banen_03.jpg" style="width:100%">
                     </div>
                 </div>
             </div>
             <div class="w3-row w3-white">
                 <div class="w3-third">
                     <div class="w3-card">
-                        <img class="gallery-img" src="images/banen_04.jpg" style="width:100%">
+                        <img class="gallery-img" src="images/thumbnails/banen_04.jpg" style="width:100%">
                     </div>
                 </div>
                 <div class="w3-third">
                     <div class="w3-card">
-                        <img class="gallery-img" src="images/banen_05.jpg" style="width:100%">
+                        <img class="gallery-img" src="images/thumbnails/banen_05.jpg" style="width:100%">
                     </div>
                 </div>
                 <div class="w3-third">
                     <div class="w3-card">
-                        <img class="gallery-img" src="images/banen_06.jpg" style="width:100%">
+                        <img class="gallery-img" src="images/thumbnails/banen_06.jpg" style="width:100%">
                     </div>
                 </div>
             </div>
@@ -348,14 +348,15 @@
 
             const modal = document.createElement("div")
             modal.classList.add("w3-modal")
+            modal.style.background = 'rgb(0,0,0,0.9)'
 
             const popup = document.createElement("div")
             modal.appendChild(popup)
-            popup.style.background = 'rgb(0,0,0, 0.3)'
             const img = document.createElement("img")
             popup.appendChild(img)
             popup.classList.add('w3-modal-content')
-            img.src = imgElem.src
+            popup.style.width = '80%'
+            img.src = imgElem.src.replace('/thumbnails', '')
             img.alt = ''
             img.style.width = '100%'
             img.onclick = function () {
