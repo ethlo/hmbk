@@ -28,7 +28,7 @@
     }
 
     .gallery-img {
-        cursor: pointer;
+        cursor: zoom-in;
     }
 
 </style>
@@ -283,24 +283,117 @@
     </div>
 
 
-    <!-- Været -->
-    <div class="w3-black" id="weather" style="min-height: 100%">
+    <div class="w3-black" id="q&a">
         <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">Spørsmål og svar</h2>
+            <h3>
+                <i class="fa fa-question-circle" style="width:30px"> </i>Er det strømuttak hos dere?
+            </h3>
+            <p>Det er ikke fast installert strøm hos oss, så tilgjengelighet er noe uviss og avhenging av at vi har
+                aggregat til disposisjon. Dette er noe vi jobber med å forbedre.</p>
 
+            <h3>
+                <i class="fa fa-question-circle" style="width:30px"> </i>Hva er beste runde-tid?
+            </h3>
+            <p>
+                Med tanke på at forholdene endrer seg såpass mye over tid, er det ikke like mye verdi i å snakke om en
+                bestetid som det vil være på en asfalt-bane eller på en
+                innendørs-bane. Når det er sagt, så kjører de beste konsistent runder på godt under 40 sekunder. Dette
+                tilsvarer 71 runder på et 45 minutters heat!
+            </p>
+
+
+            <h3>
+                <i class="fa fa-question-circle" style="width:30px"> </i>Hvor lang er banen
+            </h3>
+            <p>
+                Kommer...
+            </p>
+
+            <h3>
+                <i class="fa fa-question-circle" style="width:30px"> </i>Hvilke fasiliteter finnes?
+            </h3>
+            <p>
+                Kommer...
+            </p>
+
+            <h3>
+                <i class="fa fa-question-circle" style="width:30px"> </i>Hva burde jeg velge? Nitro eller elektrisk?
+            </h3>
+            <p>
+                Her er det mange sterke meninger, individuelle behov og ønsker, så forsøksvis objektivt:
+            </p>
+            <table class="w3-white w3-table-all">
+                <tr>
+                    <th>Hva</th>
+                    <th>Nitro</th>
+                    <th>Elektro - børsteløs</th>
+                </tr>
+                <tr>
+                    <th>Kostnad innkjøp</th>
+                    <td>Middels til kostbart</td>
+                    <td>Middels til kostbart</td>
+                </tr>
+                <tr>
+                    <th>Skikkelig lyd og lukt</th>
+                    <td>Ja</td>
+                    <td>Nei</td>
+                </tr>
+                <tr>
+                    <th>Effektkurve</th>
+                    <td>Turtallsvillig</td>
+                    <td>Dreiemoment</td>
+                </tr>
+                <tr>
+                    <th>Kjøretid</th>
+                    <td>Ubegrenset. Typisk 7-10 min pr tank</td>
+                    <td>10-30 min. Flere batteri-pakker gjør at
+                        man kan lade mens man kjører</td>
+                </tr>
+                <tr>
+                    <th>Service</th>
+                    <td>Endel forbruksdeler, men ikke så kostbare (filtere, clutch-lager)</td>
+                    <td>Lite forbruksdeler</td>
+                </tr>
+                <tr>
+                    <th>Ekstra-utstyr</th>
+                    <td>Motorvarmer, gløder, startboks, fuel-flaske, etc</td>
+                    <td>Li-Po lader</td>
+                </tr>
+                <tr>
+                    <th>Toppfart *</th>
+                    <td>Meget rask</td>
+                    <td>Ekstremt rask</td>
+                </tr>
+                <tr>
+                    <th>Konkurranser</th>
+                    <td>Mange</td>
+                    <td>Få</td>
+                </tr>
+            </table>
+
+            * Merk at på bane blir toppfart en relativt uvensentlig faktor, så i race går de like fort.
+
+            <h3>
+                <i class="fa fa-question-circle" style="width:30px"> </i>Jeg er nybegynner og syns det er flaut å
+                kjøre når dyktige sjåfører har sine biler på banen. Hva gjør jeg?
+            </h3>
+            <p>
+                Her er det både folk som kjører norges-cup og norgesmesterskap og folk som startet forrige uke.
+                Uansett er man hjertelig velkommen
+                så lenge man er litt ydmyk og tar hensyn. Vi tilpasser oss hverandre og lærer både kjøreteknikk og
+                bil-oppsett av de som
+                har vært med en stund. Her blir du tatt imot med et smil, og husk at alle har vært nybegynner en gang!
+            </p>
+        </div>
+    </div>
+
+    <!-- Været -->
+    <div class="w3-white" id="weather" style="min-height: 100%">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
             <h3>Været</h3>
-            <a class="weatherwidget-io" href="https://forecast7.com/no/59d5310d09/hof/" data-label_1="HMBK"
-               data-label_2="været" data-icons="Climacons Animated" data-days="7" data-theme="dark">HMBK været</a>
-            <script>
-                !function (d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0];
-                    if (!d.getElementById(id)) {
-                        js = d.createElement(s);
-                        js.id = id;
-                        js.src = 'https://weatherwidget.io/js/widget.min.js';
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }
-                }(document, 'script', 'weatherwidget-io-js');
-            </script>
+            <a href="https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-511339/Norge/Vestfold%20og%20Telemark/Holmestrand/Hof">
+                <i class="fa fa-cloud" style="width:30px"> </i>yr.no</a>
         </div>
     </div>
 </div>
@@ -362,13 +455,13 @@
             popup.style.width = '80%'
             img.src = imgElem.src.replace('/thumbnails', '')
             img.alt = ''
+            img.style.cursor = 'zoom-out'
             img.style.width = '100%'
             img.onclick = function () {
                 document.body.removeChild(modal)
                 popup.style.display = 'none';
             }
 
-            console.log('clicked')
             document.body.appendChild(modal)
             modal.style.display = 'block'
         }
