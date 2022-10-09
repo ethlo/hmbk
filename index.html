@@ -31,6 +31,13 @@
         cursor: zoom-in;
     }
 
+    .video img {
+        float:left;
+        padding:5px;
+        width: 255px;
+        height: auto;
+    }
+
     @media only screen and (max-device-width: 480px) {
         .gallery-img {
             pointer-events: none;
@@ -51,6 +58,7 @@
         <a href="#membership" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Medlemskap</a>
         <a href="#where" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Hvor</a>
         <a href="#q&a" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Q&A</a>
+        <a href="#video" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Videoer</a>
         <a href="#weather" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Været</a>
         <a href="https://www.facebook.com/groups/209667809096765">
             <span style="background: black; font-size:xx-large; color:#3b5998; float: right; padding-right:10px;">
@@ -133,32 +141,11 @@
                     Klubben vår er et sted vi samles for å trene, kjøre å ha det gøy, diskutere set-up på bilene,
                     justere
                     motorer, konkurrere og ha sosialt samvær. Ikke minst skal vi ha det gøy!
-                </div>
-            </div>
 
-            <div class="w3-row">
-                <div class="w3-half">
                     <p>
-                        <i class="fa fa-phone" style="width:30px"></i> Telefon: +47 <br>
-                        <i class="fa fa-envelope" style="width:30px"> </i> E-post: <a
-                            href="mailto:xhofmodellbilklubbx@xgmailx.com"
-                            onmouseover="this.href=this.href.replace(/x/g,'');">klikk her</a><br>
                         <a href="https://www.facebook.com/groups/209667809096765"><i class="fa fa-facebook-official"
                                                                                      style="width:30px"> </i>Facebook-side</a><br>
                         Org.nr: <a href="https://w2.brreg.no/enhet/sok/detalj.jsp?orgnr=818549822">818549822</a>
-                    </p>
-                </div>
-                <div class="w3-half">
-                    <p>
-                        <b>Leder:</b> André Hansen<br>
-                        <b>Nestleder:</b> Danny Kwiakowski
-
-                        <br><br><b>Styre-medlemmer:</b>
-                    <ul>
-                        <li>William Jacobsen</li>
-                        <li>Rune Karlsen</li>
-                        <li>Terje Andre Syvertsen</li>
-                    </ul>
                     </p>
                 </div>
             </div>
@@ -184,7 +171,7 @@
             <div class="w3-row w3-white">
                 <div class="w3-third">
                     <div class="w3-card">
-                        <img class="gallery-img" src="images/thumbnails/banen_01.webp" style="width:100%">
+                        <img class="gallery-img" src="images/thumbnails/banen_01.webp" style="width:100%" alt="">
                     </div>
                 </div>
 
@@ -388,9 +375,39 @@
         </div>
     </div>
 
+    <!-- Videoer -->
+    <div class="w3-white" id="video" style="min-height: 100%">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">Videoer</h2>
+            <div class="video">
+                <a href="https://youtu.be/pvl--EaGIRk"><img alt=""
+                                                            src="https://i.ytimg.com/vi_webp/pvl--EaGIRk/maxresdefault.webp"></a>
+            </div>
+            <div class="video">
+                <a href="https://youtu.be/q15_Yt-gfDI"><img alt=""
+                                                            src="https://i.ytimg.com/vi_webp/q15_Yt-gfDI/maxresdefault.webp"></a>
+            </div>
+            <div class="video">
+                <a href="https://youtu.be/RqjkqigIQSA"><img alt=""
+                                                            src="https://i.ytimg.com/vi_webp/RqjkqigIQSA/maxresdefault.webp"></a>
+            </div>
+            <div class="video">
+                <a href="https://youtu.be/WajNGNyD-Uo"><img alt=""
+                                                            src="https://i.ytimg.com/vi_webp/WajNGNyD-Uo/maxresdefault.webp"></a>
+            </div>
+            <div class="video">
+                <a href="https://youtu.be/bB-KzqKxM00"><img alt=""
+                                                            src="https://i.ytimg.com/vi_webp/bB-KzqKxM00/maxresdefault.webp"></a>
+            </div>
+        </div>
+    </div>
+
     <!-- Været -->
-    <div class="w3-white" id="weather" style="min-height: 100%">
-        <img src="https://www.yr.no/nb/innhold/1-511339/meteogram.svg" alt="Værmelding for Hof">
+    <div class="w3-black" id="weather" style="min-height: 100%">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">Været</h2>
+            <img src="https://www.yr.no/nb/innhold/1-511339/meteogram.svg" alt="Værmelding for Hof">
+        </div>
     </div>
 </div>
 
